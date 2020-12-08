@@ -3,7 +3,7 @@
 const mongoose = require('mongoose')
 
 // connecting to mongoDB using mongoose
-// TODO create database_uri
+// create database_uri
 mongoose.connect(process.env.DATABASE_URI,{
     useNewUrlParser: true, 
     useCreateIndex: true, 

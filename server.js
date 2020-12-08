@@ -3,7 +3,7 @@ const express = require('express')
 const logger = require('morgan')
 const cors = require('cors')
 
-// TODO require .env file and require DB module
+// requires .env file and require DB module
 require('dotenv').config()
 require('./config/database')
 
