@@ -10,6 +10,7 @@
 - Morgan
 - Express
 - MongoDB
+- bcrypt
 
 ## Screenshots
 
