@@ -21,7 +21,7 @@ app.use(cors())
 app.use(logger('dev'))
 
 // TODO use routes here 
-app.use('/', bikesRouter)
+app.use('/bikes', bikesRouter)
 app.use('/users', usersRouter)
 
 // //======== playground below ========= // 

@@ -17,9 +17,9 @@ const bikeSchema = new Schema({
 
 // Here's an example of Mongoose Middleware
 // Ensure that initials are uppercase & not longer than 3 characters
-bikeSchema.pre('save', function (next) {
-    this.initials = this.initials.substr(0, 3).toUpperCase();
-    next();
-  });
+// bikeSchema.pre('save', function (next) {
+//     this.initials = this.initials.substr(0, 3).toUpperCase();
+//     next();
+//   });
 
 module.exports = mongoose.model('Bike', bikeSchema)
