@@ -2,6 +2,13 @@
 
 <!-- An application where users can find bikes to rent as well as trails in the local area. -->
 
+## Installation Instructions
+
+- `npm i`
+- create a `.env` file
+- set your DATABASE_URL and password in the DB url
+- set up a SECRET string
+
 ## Technologies Used
 
 - Javascript
