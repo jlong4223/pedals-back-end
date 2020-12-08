@@ -14,6 +14,6 @@ mongoose.connect(process.env.DATABASE_URI,{
 const db = mongoose.connection
 
 // Making sure to listen for the connection
-db.on('connected', ()=>{
+db.once('connected', ()=>{
     console.log(`Connected to MongoDB on ${db.host}: ${db.port}`)
 })
