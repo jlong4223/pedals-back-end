@@ -19,7 +19,7 @@ async function create(req, res) {
 // showbike function to get the info as JSON
 async function showBikes(req,res){
     const bikes = await Bike.find({})
-    console.log(bikes)
+    // console.log(bikes)
     res.json(bikes)
 }
 
