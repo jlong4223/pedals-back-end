@@ -36,6 +36,7 @@ async function login(req, res) {
         }
       });
     } catch (err) {
+        console.log(err)
       return res.status(401).json(err);
     }
   }
