@@ -36,3 +36,6 @@
 ## Future Enhancements
 
 - Allow users to see bikes in more locations
+- include subSchemas with more information
+- add Update and delete routes
+- Allow user to upload pictures instead of URL
