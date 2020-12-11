@@ -39,3 +39,4 @@
 - include subSchemas with more information
 - add Update and delete routes
 - Allow user to upload pictures instead of URL
+- add price to model
