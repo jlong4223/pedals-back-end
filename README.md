@@ -1,6 +1,6 @@
 # Pedals
 
-<!-- An application where users can find bikes to rent as well as trails in the local area. -->
+An API connected to MongoDB that stores bike information sent from the front end.
 
 ## Installation Instructions
 
@@ -8,6 +8,7 @@
 - create a `.env` file
 - set your DATABASE_URL and password in the DB url
 - set up a SECRET string
+- `npm start` or `nodemon` to run app
 
 ## Technologies Used
 
@@ -21,13 +22,11 @@
 
 ## Screenshots
 
-### ERD:
+![pic](./images/back-end-pic.png)
 
-![ERD]('/')
+### ERD Draft:
 
-### Wireframes:
-
-![Page]('/')
+![ERD](./images/bikes-ERD.png)
 
 ## Getting Started
 
@@ -35,8 +34,7 @@
 
 ## Future Enhancements
 
-- Allow users to see bikes in more locations
 - include subSchemas with more information
 - add Update and delete routes
-- Allow user to upload pictures instead of URL
-- add price to model
+- allow user to upload pictures instead of URL
+- add price info to model/schema
