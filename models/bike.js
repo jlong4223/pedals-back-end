@@ -10,7 +10,8 @@ const bikeSchema = new Schema({
     brand: String,
     size: String, 
     availableTill: String, 
-    imgURL: String
+    imgURL: String, 
+    contact: String
 },{
     timestamps: true
 })
