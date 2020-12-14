@@ -30,7 +30,7 @@ An API connected to MongoDB that stores bike information sent from the front end
 
 ## Getting Started
 
-[Click Here]() to see the deployed app.
+[Click Here](https://pedals-backend.herokuapp.com/bikes) to see the deployed app.
 
 ## Future Enhancements
 
