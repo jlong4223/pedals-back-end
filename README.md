@@ -19,6 +19,8 @@ An API connected to MongoDB that stores bike information sent from the front end
 - Express
 - MongoDB
 - bcrypt
+- JSON web token
+- Heroku
 
 ## Screenshots
 
