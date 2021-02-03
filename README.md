@@ -40,3 +40,4 @@ An API connected to MongoDB that stores bike information sent from the front end
 - add Update and delete routes
 - allow user to upload pictures instead of URL
 - add price info to model/schema
+- fix checkAuth function
