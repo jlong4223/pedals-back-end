@@ -7,6 +7,7 @@ const bikesCtrl = require("../controllers/bikes");
 router.get("/", bikesCtrl.showBikes);
 router.get("/:id", bikesCtrl.showOneBike);
 router.post("/", bikesCtrl.create);
+router.delete("/:id", bikesCtrl.deleteBike);
 
 /*---------- Protected Routes ----------*/
 // Process the token for only the routes below

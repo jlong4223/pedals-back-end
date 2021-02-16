@@ -4,6 +4,7 @@ module.exports = {
   showBikes,
   showOneBike,
   create,
+  deleteBike,
 };
 
 async function create(req, res) {
@@ -28,6 +29,15 @@ async function showOneBike(req, res) {
   try {
     const oneBike = await Bike.findById(req.params.id);
     res.json(oneBike);
+  } catch (err) {
+    res.json(err);
+  }
+}
+
+async function deleteBike(req, res) {
+  try {
+    const deletedBike = await Bike.findByIdAndDelete(req.params.id);
+    res.json(deletedBike);
   } catch (err) {
     res.json(err);
   }
