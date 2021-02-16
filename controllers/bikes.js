@@ -1,3 +1,4 @@
+const { findByIdAndUpdate } = require("../models/bike");
 const Bike = require("../models/bike");
 
 module.exports = {
@@ -5,6 +6,7 @@ module.exports = {
   showOneBike,
   create,
   deleteBike,
+  updateBike,
 };
 
 async function create(req, res) {
@@ -38,6 +40,15 @@ async function deleteBike(req, res) {
   try {
     const deletedBike = await Bike.findByIdAndDelete(req.params.id);
     res.json(deletedBike);
+  } catch (err) {
+    res.json(err);
+  }
+}
+
+async function updateBike(req, res) {
+  try {
+    const updateTheBike = await Bike.findByIdAndUpdate(req.params.id, req.body);
+    res.json(updateTheBike);
   } catch (err) {
     res.json(err);
   }
