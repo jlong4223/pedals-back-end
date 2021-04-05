@@ -1,20 +1,24 @@
 // requiring mongoose and schema
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 // creates the schema for mongodb
-const bikeSchema = new Schema({
+const bikeSchema = new Schema(
+  {
     name: String,
-    type: String, 
+    type: String,
     location: String,
     brand: String,
-    size: String, 
-    availableTill: String, 
-    imgURL: String, 
-    contact: String
-},{
-    timestamps: true
-})
+    size: String,
+    availableTill: String,
+    imgURL: String,
+    contact: String,
+    createdBy: String,
+  },
+  {
+    timestamps: true,
+  }
+);
 
 // Here's an example of Mongoose Middleware
 // Ensure that initials are uppercase & not longer than 3 characters
@@ -23,4 +27,4 @@ const bikeSchema = new Schema({
 //     next();
 //   });
 
-module.exports = mongoose.model('Bike', bikeSchema)
+module.exports = mongoose.model("Bike", bikeSchema);
