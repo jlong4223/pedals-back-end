@@ -37,6 +37,7 @@ async function showOneBike(req, res) {
 }
 
 async function deleteBike(req, res) {
+  console.log(req.user);
   try {
     const deletedBike = await Bike.findByIdAndDelete(req.params.id);
     res.json(deletedBike);
